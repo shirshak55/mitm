@@ -1,0 +1,18 @@
+[package]
+name = "mitm"
+version = "0.1.0"
+authors = ["Shirshak <8097377+shirshak55@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = "0.13.6"
+http = "0.2.1"
+rustls = "0.17.0"
+log = "0.4.8"
+futures = "0.3.5"
+tokio = {version= "0.2.21", features=["full"]}
+tokio-rustls = "0.13.1"
+rcgen = {version = "0.8.4", features=["x509-parser","pem"]}
+pem = "0.8"
